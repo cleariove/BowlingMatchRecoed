@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="831.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bowling.controller.SingleMatchController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="819.0" prefWidth="1201.0">
+         <children>
+            <TableView fx:id="Table" layoutY="110.0" prefHeight="597.0" prefWidth="1210.0">
+               <columns>
+                  <TableColumn fx:id="name" text="Name" />
+                  <TableColumn fx:id="ID" prefWidth="64.0" text="ID" />
+                  <TableColumn fx:id="one" prefWidth="96.0" text="1">
+                     <columns>
+                        <TableColumn fx:id="one_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="one_2" prefWidth="50.0" text="二" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="204.0" text="2">
+                     <columns>
+                        <TableColumn fx:id="two_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="two_2" prefWidth="50.0" text="二" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="171.0" text="3">
+                     <columns>
+                        <TableColumn fx:id="three_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="three_2" prefWidth="50.0" text="二" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="171.0" text="4">
+                     <columns>
+                        <TableColumn fx:id="four_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="four_2" prefWidth="50.0" text="二" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="171.0" text="5">
+                     <columns>
+                        <TableColumn fx:id="five_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="five_2" prefWidth="50.0" text="二" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="171.0" text="6">
+                     <columns>
+                        <TableColumn fx:id="six_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="six_2" prefWidth="50.0" text="二" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="171.0" text="7">
+                     <columns>
+                        <TableColumn fx:id="seven_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="seven_2" prefWidth="50.0" text="二" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="171.0" text="8">
+                     <columns>
+                        <TableColumn fx:id="eight_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="eight_2" prefWidth="50.0" text="二" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="171.0" text="9">
+                     <columns>
+                        <TableColumn fx:id="nine_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="nine_2" prefWidth="50.0" text="二" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="171.0" text="10">
+                     <columns>
+                        <TableColumn fx:id="ten_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="ten_2" prefWidth="50.0" text="二" />
+                        <TableColumn fx:id="ten_3" prefWidth="50.0" text="三" />
+                     </columns>
+                  </TableColumn>
+
+                  <TableColumn fx:id="finalScore" prefWidth="83.0" text="总得分" />
+               </columns>
+            </TableView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="331.0" layoutY="18.0" prefHeight="53.0" prefWidth="192.0" text="单人赛">
+               <font>
+                  <Font size="62.0" />
+               </font>
+            </Label>
+            <TextField fx:id="roundText" layoutX="733.0" layoutY="8.0" prefHeight="45.0" prefWidth="94.0" text="1">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </TextField>
+            <Label layoutX="521.0" layoutY="18.0" text="Round">
+               <font>
+                  <Font size="62.0" />
+               </font>
+            </Label>
+            <Button fx:id="roundOne" layoutX="14.0" layoutY="725.0" mnemonicParsing="false" onAction="#roundOne" prefHeight="79.0" prefWidth="170.0" text="第一局" />
+            <Button fx:id="roundTwo" layoutX="212.0" layoutY="725.0" mnemonicParsing="false" onAction="#roundTwo" prefHeight="79.0" prefWidth="170.0" text="第二局" />
+            <Button fx:id="roundThree" layoutX="427.0" layoutY="725.0" mnemonicParsing="false" onAction="#roundThree" prefHeight="79.0" prefWidth="170.0" text="第三局" />
+            <Button fx:id="roundFour" layoutX="632.0" layoutY="725.0" mnemonicParsing="false" onAction="#roundFour" prefHeight="79.0" prefWidth="170.0" text="第四局" />
+            <Button fx:id="roundFive" layoutX="827.0" layoutY="725.0" mnemonicParsing="false" onAction="#roundFive" prefHeight="79.0" prefWidth="170.0" text="第五局" />
+            <Button fx:id="roundSix" layoutX="1025.0" layoutY="725.0" mnemonicParsing="false" onAction="#roundSix" prefHeight="79.0" prefWidth="170.0" text="第六局" />
+            <Button layoutX="970.0" layoutY="33.0" mnemonicParsing="false" onAction="#goToTopThree" prefHeight="48.0" prefWidth="105.0" text="颁奖" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

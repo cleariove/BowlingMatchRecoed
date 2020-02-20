@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane prefHeight="739.0" prefWidth="974.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bowling.controller.TopThreeController">
+   <children>
+       <ImageView fx:id="imageView_0" fitHeight="273.0" fitWidth="546.0" layoutX="209.0" layoutY="356.0">
+           <image>
+
+               <Image url="bowling/images/0.png" />
+           </image>
+
+
+       </ImageView>
+
+        <ImageView fx:id="imageView_1" fitHeight="203.0" fitWidth="230.0" layoutY="418.0">
+            <image>
+
+                <Image url="bowling/images/1.jpg" />
+            </image>
+
+        </ImageView>
+
+           <ImageView fx:id="imageView_2" fitHeight="238.0" fitWidth="990.0" layoutX="-11.0" layoutY="86.0">
+               <image>
+
+                   <Image url="bowling/images/2.jpg" />
+               </image>
+
+
+           </ImageView>
+       <ImageView fx:id="imageView_3" fitHeight="218.0" fitWidth="198.0" layoutX="768.0" layoutY="405.0">
+           <image>
+
+               <Image url="bowling/images/3.jpg" />
+           </image>
+
+
+       </ImageView>
+
+      <Label fx:id="one" layoutX="437.0" layoutY="418.0" prefHeight="48.0" prefWidth="90.0">
+       <font>
+       <Font size="25.0" />
+       </font>
+       </Label>
+
+      <Label fx:id="two" layoutX="283.0" layoutY="462.0" prefHeight="35.0" prefWidth="90.0">
+       <font>
+           <Font size="25.0" />
+       </font>
+   </Label>
+      <Label fx:id="three" layoutX="586.0" layoutY="462.0" prefHeight="35.0" prefWidth="126.0">
+       <font>
+           <Font size="25.0" />
+       </font>
+   </Label>
+
+   </children>
+</AnchorPane>

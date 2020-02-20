@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="636.0" prefWidth="1009.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bowling.controller.testController">
+   <children>
+      <AnchorPane layoutX="81.0" layoutY="118.0" prefHeight="171.0" prefWidth="105.0">
+         <children>
+            <Label text="第一轮" />
+            <TextField fx:id="one_1" layoutY="32.0" prefHeight="48.0" prefWidth="46.0" />
+            <Label layoutX="1.0" layoutY="80.0" prefHeight="32.0" prefWidth="105.0" text="本轮得分" />
+            <TextField fx:id="one" layoutY="112.0" prefHeight="48.0" prefWidth="98.0" />
+            <TextField fx:id="one_11" layoutX="46.0" layoutY="32.0" prefHeight="48.0" prefWidth="46.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="250.0" layoutY="118.0" prefHeight="171.0" prefWidth="151.0">
+         <children>
+            <Label text="第二轮" />
+            <TextField layoutY="32.0" prefHeight="48.0" prefWidth="72.0" />
+            <TextField layoutX="73.0" layoutY="32.0" prefHeight="48.0" prefWidth="72.0" />
+            <Label layoutX="1.0" layoutY="80.0" prefHeight="32.0" prefWidth="145.0" text="本轮得分" />
+            <TextField layoutY="112.0" prefHeight="42.0" prefWidth="145.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="401.0" layoutY="118.0" prefHeight="171.0" prefWidth="151.0">
+         <children>
+            <Label text="第二轮" />
+            <TextField layoutY="32.0" prefHeight="48.0" prefWidth="72.0" />
+            <TextField layoutX="73.0" layoutY="32.0" prefHeight="48.0" prefWidth="72.0" />
+            <Label layoutX="1.0" layoutY="80.0" prefHeight="32.0" prefWidth="145.0" text="本轮得分" />
+            <TextField layoutY="112.0" prefHeight="42.0" prefWidth="145.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

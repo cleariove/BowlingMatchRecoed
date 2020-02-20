@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="831.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bowling.controller.ClassicMatchController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="819.0" prefWidth="1201.0">
+         <children>
+            <TableView fx:id="Table" layoutY="110.0" prefHeight="597.0" prefWidth="1210.0">
+               <columns>
+                  <TableColumn fx:id="name" text="Name" />
+                  <TableColumn fx:id="ID" prefWidth="64.0" text="ID" />
+                  <TableColumn fx:id="one" prefWidth="96.0" text="1">
+                     <columns>
+                        <TableColumn fx:id="one_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="one_2" prefWidth="50.0" text="二" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="204.0" text="2">
+                     <columns>
+                        <TableColumn fx:id="two_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="two_2" prefWidth="50.0" text="二" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="171.0" text="3">
+                     <columns>
+                        <TableColumn fx:id="three_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="three_2" prefWidth="50.0" text="二" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="171.0" text="4">
+                     <columns>
+                        <TableColumn fx:id="four_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="four_2" prefWidth="50.0" text="二" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="171.0" text="5">
+                     <columns>
+                        <TableColumn fx:id="five_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="five_2" prefWidth="50.0" text="二" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="171.0" text="6">
+                     <columns>
+                        <TableColumn fx:id="six_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="six_2" prefWidth="50.0" text="二" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="171.0" text="7">
+                     <columns>
+                        <TableColumn fx:id="seven_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="seven_2" prefWidth="50.0" text="二" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="171.0" text="8">
+                     <columns>
+                        <TableColumn fx:id="eight_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="eight_2" prefWidth="50.0" text="二" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="171.0" text="9">
+                     <columns>
+                        <TableColumn fx:id="nine_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="nine_2" prefWidth="50.0" text="二" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="171.0" text="10">
+                     <columns>
+                        <TableColumn fx:id="ten_1" prefWidth="50.0" text="一" />
+                        <TableColumn fx:id="ten_2" prefWidth="50.0" text="二" />
+                        <TableColumn fx:id="ten_3" prefWidth="50.0" text="三" />
+                     </columns>
+                  </TableColumn>
+
+                  <TableColumn fx:id="finalScore" prefWidth="83.0" text="总得分" />
+               </columns>
+            </TableView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="331.0" layoutY="18.0" prefHeight="53.0" prefWidth="192.0" text="精英赛">
+               <font>
+                  <Font size="62.0" />
+               </font>
+            </Label>
+            <TextField fx:id="roundText" layoutX="733.0" layoutY="8.0" prefHeight="98.0" prefWidth="132.0" text="1">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </TextField>
+            <Label layoutX="521.0" layoutY="18.0" text="Round">
+               <font>
+                  <Font size="62.0" />
+               </font>
+            </Label>
+            <Button layoutX="274.0" layoutY="721.0" mnemonicParsing="false" onAction="#show" prefHeight="63.0" prefWidth="100.0" text="查询" />
+            <SplitMenuButton fx:id="SMB" layoutX="56.0" layoutY="721.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="158.0" text="请选择局数">
+               <items>
+                  <MenuItem fx:id="item1" mnemonicParsing="false" onAction="#deal1" text="第一局" />
+                  <MenuItem fx:id="item2" mnemonicParsing="false" onAction="#deal2" text="第二局" />
+                  <MenuItem fx:id="item3" mnemonicParsing="false" onAction="#deal3" text="第三局" />
+                  <MenuItem fx:id="item4" mnemonicParsing="false" onAction="#deal4" text="第四局" />
+                  <MenuItem fx:id="item5" mnemonicParsing="false" onAction="#deal5" text="第五局" />
+                  <MenuItem fx:id="item6" mnemonicParsing="false" onAction="#deal6" text="第六局" />
+                  <MenuItem fx:id="item7" mnemonicParsing="false" onAction="#deal7" text="第七局" />
+                  <MenuItem fx:id="item8" mnemonicParsing="false" onAction="#deal8" text="第八局" />
+                  <MenuItem fx:id="item9" mnemonicParsing="false" onAction="#deal9" text="第九局" />
+                  <MenuItem fx:id="item10" mnemonicParsing="false" onAction="#deal10" text="第十局" />
+                  <MenuItem fx:id="item11" mnemonicParsing="false" onAction="#deal11" text="第十一局" />
+                  <MenuItem fx:id="item12" mnemonicParsing="false" onAction="#deal12" text="第十二局" />
+                  <MenuItem fx:id="item13" mnemonicParsing="false" onAction="#deal13" text="第十三局" />
+                  <MenuItem fx:id="item14" mnemonicParsing="false" onAction="#deal14" text="第十四局" />
+                  <MenuItem fx:id="item15" mnemonicParsing="false" onAction="#deal15" text="第十五局" />
+               </items>
+            </SplitMenuButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

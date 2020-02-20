@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.net.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane prefHeight="980.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bowling.controller.MainViewController">
+   <children>
+      <ImageView fx:id="image" fitHeight="980.0" fitWidth="730.0">
+         <image>
+
+            <Image url="bowling/images/8.jpg" />
+         </image>
+
+      </ImageView>
+      <Button fx:id="BtSingle" layoutX="192.0" layoutY="280.0" mnemonicParsing="false" onAction="#goToSingleMatch" prefHeight="86.0" prefWidth="173.0" text="单人赛" AnchorPane.leftAnchor="192.0" AnchorPane.topAnchor="280.0">
+         <font>
+            <Font size="39.0" />
+         </font></Button>
+      <Button fx:id="BtDouble" contentDisplay="TOP" layoutX="407.0" layoutY="280.0" mnemonicParsing="false" onAction="#goToDoubleMatch" prefHeight="86.0" prefWidth="173.0" text="双人赛" AnchorPane.bottomAnchor="614.0" AnchorPane.leftAnchor="407.0">
+         <font>
+            <Font size="39.0" />
+         </font></Button>
+      <Button fx:id="BtTriple" layoutX="192.0" layoutY="364.0" mnemonicParsing="false" onAction="#goToTripleMatch" prefHeight="86.0" prefWidth="173.0" text="三人赛" AnchorPane.rightAnchor="365.0" AnchorPane.topAnchor="364.0">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Button>
+      <Button fx:id="BtClassic" layoutX="192.0" layoutY="447.0" mnemonicParsing="false" onAction="#goToClassicMatch" prefHeight="86.0" prefWidth="173.0" text="精英赛" AnchorPane.bottomAnchor="447.0" AnchorPane.rightAnchor="365.0">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Button>
+      <Button fx:id="BtPenta" layoutX="407.0" layoutY="364.0" mnemonicParsing="false" onAction="#goToPentaMatch" prefHeight="86.0" prefWidth="173.0" text="五人赛">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Button>
+      <Button fx:id="FindScore" layoutX="279.0" layoutY="533.0" mnemonicParsing="false" onAction="#findScore" text="查询成绩" />
+
+      <Button fx:id="BtFinal" layoutX="407.0" layoutY="447.0" mnemonicParsing="false" onAction="#goToFinalMatch" prefHeight="86.0" prefWidth="173.0" text="总决赛">
+         <font>
+            <Font size="37.0" />
+         </font></Button>
+
+   </children>
+
+   <stylesheets>
+      <URL value="@style.css" />
+   </stylesheets>
+
+</AnchorPane>
